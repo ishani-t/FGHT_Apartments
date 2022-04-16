@@ -134,7 +134,7 @@ function Home() {
 
             <div className={classes.card}>
               <Typography className={classes.cardName}>Ishani Tarafdar</Typography>
-              <Typography className={classes.cardBio}>Bio</Typography>
+              <Typography className={classes.cardBio}>Sophomore in CS! Loves React and food.</Typography>
             </div>
 
             <div className={classes.card}>
