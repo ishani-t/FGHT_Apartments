@@ -43,7 +43,45 @@ const Upload = () => {
                 multiple
                 updateFilesCb={updateUploadedFiles}
                 />
+
+                <p>Address: </p>
+                <input type="text" />
+
+                <p>Rent: </p>
+                <input type="text" />
+
+                <p>Start Date:</p>
+                <input type="text" />
+
+                <p>End Date:</p>
+                <input type="text" />
+
+                <p>Bedrooms:</p>
+                <input type="text" />
+
+                <p>Bathrooms:</p>
+                <input type="text" />
+
+                <p>Number Roommates:</p>
+                <input type="text" />
+
+                <p>Features:</p>
+                <input type="checkbox" /> Air Conditioning <br />
+                <input type="checkbox" /> In-unit washer/dryer <br />
+                <input type="checkbox" /> Security 
+                <p>Submit: </p>
+
+                <p>Contact Information:</p>
+                <label>Email: </label><input type="text" /> <br />
+                <label>Phone Number: </label><input type="text" /> <br />
+
+                <label>Introduce yourself!</label> <br />
+                <textarea></textarea>
+                
+                <p>Submit: </p>
                 <button type="submit">Upload Video Tour</button>
+
+
             </form>
         </div>
     );
