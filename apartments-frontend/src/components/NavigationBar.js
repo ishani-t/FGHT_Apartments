@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import {
     AppBar, Button, makeStyles, Toolbar, Typography } from '@material-ui/core';
@@ -21,20 +21,26 @@ import {
       fontSize: '24px',
       lineHeight: '28px',
       textTransform: 'none',
-      padding: '10px',
+      padding: '12px',
     },
   });
 
 
-const NavigationBar = () => {
+const NavigationBar = ({loggedIn, handleLogIn}) => {
     const classes = useStyles();
+
+    
+
     return (
         <>
-            <AppBar className={classes.appBar} position="static">
+            <AppBar className={classes.appBar} elevation={0} position="static">
                 <Toolbar className={classes.toolBar}>
                     <Button component={Link} to="/"><Typography className={classes.button}>Home</Typography></Button>
-                    <Button component={Link} to="/listings"><Typography className={classes.button}>Listings</Typography></Button>
-                    <Button component={Link} to="/upload"><Typography className={classes.button}>Upload</Typography></Button>
+                    {loggedIn ? <Button component={Link} to="/listings" className={classes.button}>View Listings</Button> : <Button component={Link} to="/listings" className={classes.button}>View Listings</Button>}
+                    {loggedIn ? <Button component={Link} to="/editlistings"><Typography className={classes.button}>Edit Your Listings</Typography></Button> : <> </>}
+                    {loggedIn ? <Button component={Link} to="/upload"><Typography className={classes.button}>Create Listing</Typography></Button> : <></>}
+                    {loggedIn ? <Button onClick={()=>{handleLogIn()}} component={Link} to="/"><Typography className={classes.button}>Logout</Typography></Button> : <></>}
+                    {loggedIn ? <></> : <Button component={Link} to="/login" className={classes.button}>Login</Button>}
                 </Toolbar>
             </AppBar>
         </>

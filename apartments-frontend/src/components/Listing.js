@@ -1,10 +1,10 @@
 import React from 'react-router-dom';
-import { Card, makeStyles, Box, Typography, Button, IconButton, CardContent, CardMedia } from '@material-ui/core';
+import { Card, makeStyles, Typography, CardContent, CardMedia } from '@material-ui/core';
 import AptImage from './apartment_building_pic.jpg'
 
 const useStyles = makeStyles({
   card: {
-    width: '500px',
+    width: '100%',
     backgroundColor: '#f9f9f9',
     display: 'flex',
     padding: '10px 5px 10px 10px',
@@ -18,20 +18,25 @@ const useStyles = makeStyles({
   }
 });
 
-const Listing = ({title, price}) => {
+const Listing = ({listing, handleSelect}) => {
   const classes = useStyles();
 
   return (
     <> 
-      <Card variant='outlined' className={classes.card} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'baseline'}}>
+      <Card onClick={() => handleSelect(listing._id)} variant='outlined' className={classes.card} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'baseline'}}>
       
         <div className={classes.cardStuff} sx={{ display: 'flex', flexDirection: 'column' }}>
           <CardContent sx={{ flex: '1 0 auto' }}>
             <Typography component="div" variant="h5">
-              {title}
+              {listing.title}
             </Typography>
-            <Typography variant="subtitle1" color="text.secondary" component="div">
-              ${price}/month
+            
+            <Typography variant="subtitle1" color="black" component="div">
+              ${listing.rent}/month
+            </Typography>
+
+            <Typography variant="subtitle1" color="black" component="div">
+              {listing.bedrooms} bed / {listing.bathrooms} bath
             </Typography>
           </CardContent>
         </div>

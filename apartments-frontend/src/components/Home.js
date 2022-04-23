@@ -79,7 +79,7 @@ function Home() {
     
     <div className={classes.container}>
       <div className={classes.section}>
-        <Typography variant="h3" className={classes.sectionHeader}>Welcome to FGTH's Apartment Hunting Platform!</Typography>
+        <Typography variant="h3" className={classes.sectionHeader}>Welcome to FGHT's Apartment Hunting Platform!</Typography>
         <Typography variant="body1">We are a group of students from the University of Illinois Urbana-Champaign passionate about streamlining the process of finding and subleasing apartments.</Typography>
         
         <Typography variant="body1">
@@ -108,55 +108,41 @@ function Home() {
         </div>
       </div>
 
-      {/* <div className={classes.section}>
-        <Typography variant="h3" className={classes.sectionHeader}>Getting Started</Typography>
-        <Typography variant="body1">
-          You will be receiving an email at the start of the conference with a link to your personal login to PeopleWeave.
-          Additionally, you will receive a recommendation email, which contains some people we think you may be interested in meeting and a few suggestions for papers to read based on your interests.
-          We encourage you to help connect others in your network as well!
-        </Typography>
-        <Typography variant="body1">
-          <br />
-          Our site allows you to send messages to others attending SIGCOMM this year. A great way to get started would be to search for your recommended connections attending the conference. Feel free to introduce yourself in a quick message and break the ice! The recipient will be sent your message along with the email address you provided when you registered.
-          Another great way to get connected would be to reach out to your suggested connection on Slack or to meet up on GatherTown.
-        </Typography>
-      </div> */}
-
       <div >
         <div className={classes.section}>
           <Typography variant="h3" className={classes.sectionHeader}>Meet the Team!</Typography>
 
           <div className={classes.cardContainer}>
+            
             <div className={classes.card}>
-              <Typography className={classes.cardName}>Ruidi Huang</Typography>
-              <Typography className={classes.cardBio}>Bio</Typography>
+              <Typography className={classes.cardName}>Snigdha Gupta</Typography>
+              <Typography className={classes.cardBio}>Project Manager/Software Developer</Typography>
             </div>
 
             <div className={classes.card}>
               <Typography className={classes.cardName}>Ishani Tarafdar</Typography>
-              <Typography className={classes.cardBio}>Sophomore in CS! Loves React and food.</Typography>
+              <Typography className={classes.cardBio}>Software Developer. Sophomore in CS! Loves React and food.</Typography>
             </div>
 
             <div className={classes.card}>
               <Typography className={classes.cardName}>Lauren Fiene</Typography>
-              <Typography className={classes.cardBio}>Bio</Typography>
+              <Typography className={classes.cardBio}>Software Developer</Typography>
             </div>
 
             <div className={classes.card}>
               <Typography className={classes.cardName}>Minkyung Chung</Typography>
-              <Typography className={classes.cardBio}>Bio</Typography>
+              <Typography className={classes.cardBio}>Software Developer</Typography>
             </div>
 
             <div className={classes.card}>
               <Typography className={classes.cardName}>Charlotte Meng</Typography>
-              <Typography className={classes.cardBio}>Bio</Typography>
+              <Typography className={classes.cardBio}>Software Developer</Typography>
             </div>
 
             <div className={classes.card}>
-              <Typography className={classes.cardName}>Snigdha Gupta</Typography>
-              <Typography className={classes.cardBio}>Bio</Typography>
+              <Typography className={classes.cardName}>Ruidi Huang</Typography>
+              <Typography className={classes.cardBio}>Project Manager</Typography>
             </div>
-
           </div>
         </div>
       </div>
